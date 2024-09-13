@@ -13,6 +13,7 @@ getgenv().rei = {
         GiveBackUnit=true,
         KickAfterDoneTrade= false,
     },
+	JobJoin = false,
 	JobId = "978b9309-3052-4d3f-b1e0-a3f9f000d550"
 }
 repeat wait() until game:IsLoaded()
@@ -20,7 +21,9 @@ spawn(function()
 while wait() do
 --if game.Players.LocalPlayer.Name == getgenv().rei.MainAccount then
 if game.PlaceId == 17017769292 or game.PlaceId == 17764698696 then
+				if getgenv().rei.JobJoin then
 game:GetService("TeleportService"):TeleportToPlaceInstance(17490500437,tostring(getgenv().rei.JobId),game.Players.LocalPlayer)
+				end
 end
 end
 --end
@@ -45,7 +48,7 @@ function checkacc()
     getgenv().EnableAccountForMainFolow = getgenv().rei.EnableAccountForMainFolow
     getgenv().MainAccountSetting = getgenv().rei.MainAccountSetting
     getgenv().AltAccountSetting = getgenv().rei.AltAccountSetting
-if game.PlaceId == 17490500437 then repeat wait(3) until game.Players:FindFirstChild(getgenv().rei.MainAccount) end
+if game.PlaceId == 17490500437 or not getgenv().rei.JobJoin then repeat wait() until game.Players:FindFirstChild(getgenv().rei.MainAccount) end
 game.NetworkClient.ChildRemoved:Connect(function()
     game:GetService("TeleportService"):Teleport(game.PlaceId)
 end)
