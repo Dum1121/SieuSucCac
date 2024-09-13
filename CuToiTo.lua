@@ -1,6 +1,6 @@
 getgenv().rei = {
     ["Key"] = getgenv().Key, -- bỏ key W-azure vào
-    ["MainAccount"] = "DevilFruit100H",
+    ["MainAccount"] = "clonethanhhau7",
     ["AccountForMainToFolow"] = false,
     ["MainAccountSetting"] = {
         Units = {"Legion Assassin","Legion Veteran","Blazing Soulmaster","Ace Marksman"},
@@ -13,7 +13,7 @@ getgenv().rei = {
         GiveBackUnit=true,
         KickAfterDoneTrade= false,
     },
-	JobId = "d32b94b8-5d38-4145-8604-0bdb52f56a3e"
+	JobId = "978b9309-3052-4d3f-b1e0-a3f9f000d550"
 }
 repeat wait() until game:IsLoaded()
 spawn(function()
