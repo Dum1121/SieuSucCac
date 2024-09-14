@@ -26,7 +26,7 @@ spawn(function()
 while wait() do
 --if game.Players.LocalPlayer.Name == getgenv().rei.MainAccount then
 if game.PlaceId == 17017769292 or game.PlaceId == 17764698696 then
-				if getgenv().rei.JobJoin and if game.Players.LocalPlayer.Name == getgenv().rei.MainAccount then
+				if getgenv().rei.JobJoin and game.Players.LocalPlayer.Name == getgenv().rei.MainAccount then
 game:GetService("TeleportService"):TeleportToPlaceInstance(17490500437,tostring(getgenv().rei.JobId),game.Players.LocalPlayer)
 				end
 end
