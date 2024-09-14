@@ -18,7 +18,7 @@ getgenv().rei = {
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 local getmain = table.concat(getgenv().rei.MainAccount,", ")
-if string.find(getmain,game.Players.LocalPlayer.Name) then
+if string.find(getmain:lower(),game.Players.LocalPlayer.Name:lower()) then
 getgenv().rei.MainAccount = game.Players.LocalPlayer.Name
 end
 spawn(function()
