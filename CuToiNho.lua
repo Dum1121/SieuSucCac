@@ -17,6 +17,11 @@ getgenv().rei = {
 	JobId = "978b9309-3052-4d3f-b1e0-a3f9f000d550"
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+if game.Players.LocalPlayer.Name ~= getgenv().rei.MainAccount then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/Extra/Smooth.lua"))()
+	setfpscap(5)
+	game:GetService("RunService"):Set3dRenderingEnabled(false)
+end
 spawn(function()
 while wait() do
 --if game.Players.LocalPlayer.Name == getgenv().rei.MainAccount then
