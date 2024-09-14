@@ -59,7 +59,7 @@ game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(func
     end
 end)
 
-    spawn(function()
+    --[[spawn(function()
         if game.Players.LocalPlayer.Name == getgenv().rei.MainAccount then
         while wait() do
             pcall(function()
@@ -83,7 +83,7 @@ end)
         end) 
         end
         end
-    end)
+    end)]]
 --[[spawn(function()
 while wait() do
     if game.Players.LocalPlayer.Name ~= getgenv().rei.MainAccount and game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeLimitHUD.TextLabel.Text == "🕙 Limits -  14 Trades,  5 Booth Purchases,  4 Booth Sales" then
