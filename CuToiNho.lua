@@ -8,7 +8,7 @@ getgenv().rei = {
     },
     ["AltAccountSetting"] = {
         Trade = true,
-        NotSendGem = false,
+        NotSendGem = true,
         TradeItems = {"Trait Crystal","Risky Dice","Frost Bind"},
         GiveBackUnit=true,
         KickAfterDoneTrade= false,
