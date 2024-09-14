@@ -59,7 +59,7 @@ getgenv().Webhook =  {
 spawn(function()
         while wait(5) do
             pcall(function()
-                    setfpscap(5)
+                    setfpscap(3)
                 end)
         end
     end)
