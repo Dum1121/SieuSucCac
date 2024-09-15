@@ -1,6 +1,6 @@
 getgenv().rei = {
     ["Key"] = getgenv().Key,
-    ["MainAccount"] = {"nguaoo3", "Jahdj377", "betsy726105", "plantinnank89", "alehousevn9499", "alsonm6343", "thienpr4498", "qkuauqenqg9073", "qghhmbriuq1914", "Nfsyhf6944", "Hvake6192", "vanhilsigourne", "cxvrvcbgd", "boelhouw160103", "lucydpdfqxuy45", "damlxwwlrbu44", "ulianjovhdpgo35", "ulianjovhdpgo36", "Madisonzagnqfwq28", "vannestelaurellie"},
+    ["MainAccount"] = {"Nguaoo3", "Jahdj377", "betsy726105", "plantinnank89", "alehousevn9499", "alsonm6343", "thienpr4498", "qkuauqenqg9073", "qghhmbriuq1914", "Nfsyhf6944", "Hvake6192", "vanhilsigourne", "cxvrvcbgd", "boelhouw160103", "lucydpdfqxuy45", "damlxwwlrbu44", "ulianjovhdpgo35", "ulianjovhdpgo36", "Madisonzagnqfwq28", "vannestelaurellie"},
     ["AccountForMainToFolow"] = false,
     ["MainAccountSetting"] = {
         Units = {"Legion Assassin","Legion Veteran","Blazing Soulmaster","Ace Marksman"},
@@ -18,7 +18,7 @@ getgenv().rei = {
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 local getmain = table.concat(getgenv().rei.MainAccount,", ")
-if string.find(getmain:lower(),game.Players.LocalPlayer.Name:lower()) then
+if string.find(getmain,game.Players.LocalPlayer.Name) then
 getgenv().rei.MainAccount = game.Players.LocalPlayer.Name
 end
 spawn(function()
