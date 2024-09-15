@@ -12,7 +12,7 @@ getgenv().rei = {
     "vanhilsigourne",
     "cxvrvcbgd",
     "boelhouw160103",
-    "thienpr4498",
+    "damvyPj_765816",
     "qkuauqenqg9073",
     "qghhmbriuq1914",
     "damlxwwlrbu44",
@@ -39,7 +39,7 @@ getgenv().rei = {
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 local getmain = table.concat(getgenv().rei.MainAccount,", ")
-if string.find(getmain,game.Players.LocalPlayer.Name) then
+if string.find(getmain:lower(),game.Players.LocalPlayer.Name:lower()) then
 getgenv().rei.MainAccount = game.Players.LocalPlayer.Name
 end
 spawn(function()
@@ -54,18 +54,14 @@ end
 --end
 end)
 local plr = game.Players.LocalPlayer
+getgenv().MainAccount = false
 --game:GetService("TeleportService"):Teleport(17017769292)
-function checkacc()
     if plr.Name == tostring(getgenv().rei.MainAccount) then
-        return true
-    else
-        return false
-        end
+        getgenv().MainAccount = true
     end
 
     script_key = getgenv().rei.Key 
     getgenv().SelectedPlayer = ""
-    getgenv().MainAccount = checkacc()
     getgenv().AccountForMainToFolow = getgenv().rei.AccountForMainToFolow
     getgenv().EnableAccountForMainFolow = getgenv().rei.EnableAccountForMainFolow
     getgenv().MainAccountSetting = getgenv().rei.MainAccountSetting
@@ -115,11 +111,11 @@ while wait() do
         end
     end
 end)]]
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+end
         local vu = game:GetService("VirtualUser")
         game:GetService("Players").LocalPlayer.Idled:connect(function()
             vu:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
             wait(0.5)
             vu:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
         end)
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
-end
