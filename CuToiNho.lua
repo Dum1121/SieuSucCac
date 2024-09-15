@@ -1,6 +1,6 @@
 getgenv().rei = {
     ["Key"] = "eLtkmWQRZfghUoJDVRwjdeVmPcjiOXlP",
-    ["MainAccount"] = "Nguaoo3",
+    ["MainAccount"] = "clonethanhhau7",
     ["AccountForMainToFolow"] = false,
     ["MainAccountSetting"] = {
         Units = {"Legion Assassin","Legion Veteran","Blazing Soulmaster","Ace Marksman"},
