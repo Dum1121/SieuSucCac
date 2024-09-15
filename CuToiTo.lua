@@ -40,7 +40,7 @@ getgenv().rei = {
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 local getmain = table.concat(getgenv().rei.MainAccount,", ")
 if string.find(getmain:lower(),game.Players.LocalPlayer.Name:lower()) then
-getgenv().rei.MainAccount = game.Players.LocalPlayer.Name
+getgenv().rei.MainAccount = tostring(game.Players.LocalPlayer.Name)
 end
 spawn(function()
 while wait() do
@@ -61,7 +61,7 @@ getgenv().MainAccount = false
     end
 
     script_key = getgenv().rei.Key 
-    getgenv().SelectedPlayer = ""
+    getgenv().SelectedPlayer = getgenv().rei.MainAccount
     getgenv().AccountForMainToFolow = getgenv().rei.AccountForMainToFolow
     getgenv().EnableAccountForMainFolow = getgenv().rei.EnableAccountForMainFolow
     getgenv().MainAccountSetting = getgenv().rei.MainAccountSetting
