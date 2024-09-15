@@ -21,7 +21,7 @@ getgenv().rei = {
     "ulianjovhdpgo36",
     "Madisonzagnqfwq28",
     "vannestelaurellie"
-	}
+	},
     ["AccountForMainToFolow"] = false,
     ["MainAccountSetting"] = {
         Units = {"Legion Assassin","Legion Veteran","Blazing Soulmaster","Ace Marksman"},
