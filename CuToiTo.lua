@@ -64,7 +64,7 @@ function checkacc()
     end
 
     script_key = getgenv().rei.Key 
-    getgenv().SelectedPlayer = tostring(getgenv().rei.MainAccount)
+    getgenv().SelectedPlayer = ""
     getgenv().MainAccount = checkacc()
     getgenv().AccountForMainToFolow = getgenv().rei.AccountForMainToFolow
     getgenv().EnableAccountForMainFolow = getgenv().rei.EnableAccountForMainFolow
