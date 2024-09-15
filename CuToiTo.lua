@@ -1,6 +1,27 @@
 getgenv().rei = {
     ["Key"] = getgenv().Key,
-    ["MainAccount"] = {"Nguaoo3", "Jahdj377", "betsy726105", "plantinnank89", "alehousevn9499", "alsonm6343", "thienpr4498", "qkuauqenqg9073", "qghhmbriuq1914", "Nfsyhf6944", "Hvake6192", "vanhilsigourne", "cxvrvcbgd", "boelhouw160103", "lucydpdfqxuy45", "damlxwwlrbu44", "ulianjovhdpgo35", "ulianjovhdpgo36", "Madisonzagnqfwq28", "vannestelaurellie"},
+    ["MainAccount"] = {
+    "Nguaoo3",
+    "Jahdj377",
+    "betsy726105",
+    "plantinnank89",
+    "alehousevn9499",
+    "Hvake6192",
+    "alsonm6343",
+    "Nfsyhf6944",
+    "vanhilsigourne",
+    "cxvrvcbgd",
+    "boelhouw160103",
+    "thienpr4498",
+    "qkuauqenqg9073",
+    "qghhmbriuq1914",
+    "damlxwwlrbu44",
+    "lucydpdfqxuy45",
+    "ulianjovhdpgo35",
+    "ulianjovhdpgo36",
+    "Madisonzagnqfwq28",
+    "vannestelaurellie"
+	}
     ["AccountForMainToFolow"] = false,
     ["MainAccountSetting"] = {
         Units = {"Legion Assassin","Legion Veteran","Blazing Soulmaster","Ace Marksman"},
