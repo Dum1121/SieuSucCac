@@ -38,9 +38,10 @@ getgenv().rei = {
 	JobId = "978b9309-3052-4d3f-b1e0-a3f9f000d550"
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-local getmain = table.concat(getgenv().rei.MainAccount,", ")
-if string.find(getmain:lower(),game.Players.LocalPlayer.Name:lower()) then
+for i,v in pairs(getgenv().rei.MainAccount) do
+if game.Players.LocalPlayer.Name == v then
 getgenv().rei.MainAccount = tostring(game.Players.LocalPlayer.Name)
+end
 end
 spawn(function()
 while wait() do
