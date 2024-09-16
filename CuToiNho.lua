@@ -101,6 +101,8 @@ end)]]
             wait(0.5)
             vu:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
         end)
+	if game.PlaceId == 17490500437 then
 	repeat wait() until game.Players:FindFirstChild(getgenv().rei.MainAccount)
+	end
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
 end
