@@ -13,7 +13,7 @@ getgenv().rei = {
         GiveBackUnit=true,
         KickAfterDoneTrade= false,
     },
-	JobJoin = true,
+	JobJoin = false,
 	JobId = "fbf889be-eec1-41ab-ba47-d07da5f70227"
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
