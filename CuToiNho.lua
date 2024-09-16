@@ -13,8 +13,8 @@ getgenv().rei = {
         GiveBackUnit=true,
         KickAfterDoneTrade= false,
     },
-	JobJoin = false,
-	JobId = "fbf889be-eec1-41ab-ba47-d07da5f70227"
+	JobJoin = true,
+	JobId = "8367f07e-5b01-49ca-8ed7-c3d90a486120"
 }
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 if game.Players.LocalPlayer.Name ~= getgenv().rei.MainAccount then
