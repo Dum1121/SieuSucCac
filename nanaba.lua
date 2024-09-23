@@ -99,7 +99,7 @@ for i,v in pairs(require(game:GetService("StarterPlayer").Modules.Interface.Load
         Headers = {
         ['Content-Type'] = 'application/json';
         };
-        Body = game:GetService'HttpService':JSONEncode({content = "[DumWasHere](https://guns.lol/Dum1121)\n# @everyone, Got Secret!"; embeds = {Embed}; });
+        Body = game:GetService'HttpService':JSONEncode({content = "[DumWasHere](https://guns.lol/Dum1121)\n# @everyone, Alocặc lét gô!"; embeds = {Embed}; });
         };
         print("done.")
 end
