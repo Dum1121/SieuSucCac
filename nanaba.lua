@@ -1,3 +1,10 @@
+spawn(function()
+        while wait(5) do
+            pcall(function()
+                    setfpscap(10)
+                end)
+        end
+    end)
 local plr = game.Players.LocalPlayer
 local myth,insertmyth = 0,{}
 local secr,insertsecr = 0,{}
