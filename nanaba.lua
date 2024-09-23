@@ -3,10 +3,10 @@ local myth,insertmyth = 0,{}
 local secr,insertsecr = 0,{}
 local sellshit = {}
  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
- --loadstring(game:HttpGet("https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/Extra/Smooth.lua"))()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/Extra/Smooth.lua"))()
 
- wait(3)
- --setfpscap(10)
+ wait(2)
+ setfpscap(10)
  local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
         vu:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
@@ -60,13 +60,13 @@ for i,v in pairs(require(game:GetService("StarterPlayer").Modules.Interface.Load
     end
     end
     if not insertsecr[1] then
+        getgenv().nosex = true
         table.insert(insertsecr,"nil")
     end
     if not insertmyth[1] then
         table.insert(insertmyth,"nil")
-        getgenv().nosec = true
     end
-    if not getgenv().nosec then
+    if not getgenv().nosex then
         wait(math.random(1,5))
     local Embed = {
         ["title"] = "Notification",
@@ -92,9 +92,10 @@ for i,v in pairs(require(game:GetService("StarterPlayer").Modules.Interface.Load
         Headers = {
         ['Content-Type'] = 'application/json';
         };
-        Body = game:GetService'HttpService':JSONEncode({content = "[DumWasHere](https://guns.lol/Dum1121)\n@everyone, got Secret"; embeds = {Embed}; });
+        Body = game:GetService'HttpService':JSONEncode({content = "[DumWasHere](https://guns.lol/Dum1121)\n# @everyone, Got Secret!"; embeds = {Embed}; });
         };
-    end
+        print("done.")
+end
     --[[print(table.concat(insertmyth,", "))
     print("Total Mythic: ".. myth)
     print("Total Secret: ".. secr)]]
