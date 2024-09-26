@@ -20,4 +20,5 @@ getgenv().Config = {
         },
     }
 }
+repeat wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()
