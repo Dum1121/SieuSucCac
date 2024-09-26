@@ -24,6 +24,7 @@ spawn(function()
                 end)
         end
     end)
+getgenv().RedeemAllCode = true
 getgenv().Config = {
     ["Summoner"] = {
         ["Unselect if Summoned"] = true,
