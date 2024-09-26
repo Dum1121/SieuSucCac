@@ -1,3 +1,10 @@
+spawn(function()
+        while wait(5) do
+            pcall(function()
+                    setfpscap(3)
+                end)
+        end
+    end)
 getgenv().RedeemAllCode = true
 getgenv().Config = {
     ["Webhook"] = {
