@@ -25,4 +25,4 @@ getgenv().Config = {
         },
     }
 }
-loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()
+loadstring(game:HttpGet("https://nousigi.com/loader.lua"))(
