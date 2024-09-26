@@ -5,11 +5,9 @@ getgenv().Config = {
         ["Unit Summoned"] = true,
         ["URL"] = "",
     },
-    ["Misc"] = {
-        ["Max Camera Zoom"] = 40,
-    },
     ["Summoner"] = {
         ["Unselect if Summoned"] = true,
+        ["Auto Summon Standard"] = {
             ["Roku (Dark)"] = true,
         },
         ["Auto Summon Standard"] = true,
