@@ -1,3 +1,22 @@
+for i,v in next, workspace:GetDescendants() do
+    pcall(function()
+        v.Transparency = 1
+    end)
+end
+for i,v in next, getnilinstances() do
+    pcall(function()
+        v.Transparency = 1
+        for i1,v1 in next, v:GetDescendants() do
+            v1.Transparency = 1
+        end
+    end)
+end
+a = workspace
+a.DescendantAdded:Connect(function(v)
+    pcall(function()
+        v.Transparency = 1
+    end)
+end)
 spawn(function()
         while wait(5) do
             pcall(function()
@@ -5,24 +24,25 @@ spawn(function()
                 end)
         end
     end)
-getgenv().RedeemAllCode = true
 getgenv().Config = {
-    ["Webhook"] = {
-        ["Mention"] = "",
-        ["Unit Summoned"] = true,
-        ["URL"] = "",
-    },
     ["Summoner"] = {
         ["Unselect if Summoned"] = true,
-        ["Auto Summon Standard"] = {
-            ["Roku (Dark)"] = true,
+        ["Standard Unit"] = {
+            ["Roku (Dark)"] = true
         },
         ["Auto Summon Standard"] = true,
         ["Delete Rarity"] = {
             ["Epic"] = true,
-            ["Legendary"] = false,
-            ["Rare"] = true,
-        },
+            ["Rare"] = true
+        }
+    },
+    ["Webhook"] = {
+        ["Mention"] = "",
+        ["Unit Summoned"] = true,
+        ["URL"] = ""
+    },
+    ["Macros"] = {
+        ["No Ignore Sell Timing"] = true
     }
 }
-loadstring(game:HttpGet("https://nousigi.com/loader.lua"))(
+loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()
