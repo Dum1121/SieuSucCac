@@ -20,30 +20,10 @@ end)
 spawn(function()
         while wait(5) do
             pcall(function()
-                    setfpscap(3)
+                    setfpscap(10)
                 end)
         end
     end)
-getgenv().RedeemAllCode = true
-getgenv().Config = {
-    ["Summoner"] = {
-        ["Unselect if Summoned"] = true,
-        ["Standard Unit"] = {
-            ["Roku (Dark)"] = true
-        },
-        ["Auto Summon Standard"] = true,
-        ["Delete Rarity"] = {
-            ["Epic"] = true,
-            ["Rare"] = true
-        }
-    },
-    ["Webhook"] = {
-        ["Mention"] = "",
-        ["Unit Summoned"] = true,
-        ["URL"] = ""
-    },
-    ["Macros"] = {
-        ["No Ignore Sell Timing"] = true
-    }
-}
-loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()
+getgenv().Configuration = true
+getgenv().key = '539b6039-ae10-4e05-802a-952d34bbd714'
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xenon-Trash/Loader/main/Loader.lua'))()
