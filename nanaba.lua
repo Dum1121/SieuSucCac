@@ -1,7 +1,7 @@
 getgenv().Config = {
 	["AutoSave"] = true,
 	["Webhook"] = {
-		["Minimum Chance"] = 5000000,
+		["Minimum Chance"] = 1000000,
 		["Pet Rolled"] = true,
 		["URL"] = "https://ptb.discord.com/api/webhooks/1286776956389691442/JGyS5jS9ZPw2Hpr5XeBG_7IdkaYZC9YDnFfsfkx4o9_pxWB_xWiXnmUDydB0wrE4H-9O"
 	},
